@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dolt</string>
+    <string name="task">Tasks</string>
+    <string name="new_task">New Task</string>
+    <string name="save">Save</string>
+
+
+</resources>
