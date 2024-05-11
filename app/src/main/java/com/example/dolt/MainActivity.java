@@ -32,7 +32,11 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+
+        // Check if ActionBar is not null before calling hide()
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         db = new DatabaseHandler(this);
         db.openDatabase();
